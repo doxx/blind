@@ -9,7 +9,7 @@ BUILD_TIME=$(shell date +%FT%T%z)
 LDFLAGS=-ldflags "-X main.Version=${VERSION} -X main.BuildTime=${BUILD_TIME}"
 
 # Platforms
-PLATFORMS=linux/amd64 linux/386 windows/amd64 windows/386 darwin/amd64 darwin/arm64
+PLATFORMS=linux/amd64 linux/386 linux/arm64 windows/amd64 windows/386 darwin/amd64 darwin/arm64
 
 # Output directories
 DIST_DIR=bin
